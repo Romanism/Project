@@ -1,4 +1,4 @@
-# DSS Team Project : New York City Taxi Trip Duration
+# Regression Project : New York City Taxi Trip Duration
 [New York City Taxi Trip Duration Link](https://www.kaggle.com/c/nyc-taxi-trip-duration)
 
 
