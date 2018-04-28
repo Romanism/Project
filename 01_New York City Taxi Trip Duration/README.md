@@ -1,50 +1,54 @@
 # DSS Team Project : New York City Taxi Trip Duration
-[Project Link](https://www.kaggle.com/c/nyc-taxi-trip-duration)
+[New York City Taxi Trip Duration Link](https://www.kaggle.com/c/nyc-taxi-trip-duration)
 
----
 
-### Team : Adaptor
+### 1. Team : Adaptor
 - 강동수 [팀장]
 - 김문수 [팀원]
 - 지성인 [팀원]
 
 
-### Project Period
+
+### 2. Project Period
 - 시작일 : 2018/02/03
 - 종료일 : 2018/03/14
 - 발표일 : 2018/03/15
 
 
-### Overview
 
-#### 1. Description
+### 3. Overview
+
+#### 3.1 Description
 
 In this competition, Kaggle is challenging you to build a model that predicts the total ride duration of taxi trips in New York City.
 
-$\rightarrow$ 뉴욕시에서 택시 주행시간을 예측하는 것이 목적
+
+: 뉴욕시에서 택시 주행시간을 예측하는 것이 목적
 
 
-#### 2. Evaluation (RMSLE)
-$$\epsilon = \sqrt{\frac{1}{n} \sum_{i=1}^n (\log(p_i + 1) - \log(a_i+1))^2 }$$
+#### 3.2 Evaluation (RMSLE)
+<img src="img/RMSLE.png" width="500">
 
-$ϵ$ - RMSLE value (score)
-$n$ - total number of observations in the (public/private) data set
-$p_i$ - prediction of trip duration
-$a_i$ - actual trip duration
-$log(x)$ - natural logarithm
-
-$\rightarrow$ 예측값과 실제값의 차이를 통한 점수 부여 (낮을 수록 예측값이 실제값에 가까워 좋은 예측임을 의미)
+- ϵ - RMSLE value (score)
+- n - total number of observations in the (public/private) data set
+- pi - prediction of trip duration
+- ai - actual trip duration
+- log(x) - natural logarithm
 
 
-### Data
+: 예측값과 실제값의 차이를 통한 점수 부여 (낮을 수록 예측값이 실제값에 가까워 좋은 예측임을 의미)
 
-#### 1. Data set
+
+
+### 4. Data
+
+#### 4.1 Data set
 - train.csv - the training set (contains 1,458,644 trip records)
 - test.csv - the testing set (contains 625,134 trip records)
 - sample_submission.csv - a sample submission file in the correct format
 
 
-#### 2. Data fields
+#### 4.2 Data fields
 - id - 운행 고유 id
 - vendor_id - 택시 회사 id (0/1)
 - pickup_datetime - 승차 시간
@@ -58,10 +62,11 @@ $\rightarrow$ 예측값과 실제값의 차이를 통한 점수 부여 (낮을 �
 - trip_duration - 주행시간 (초)
 
 
-### Modeling
+
+### 5. Modeling
 
 
-#### 1. EDA
+#### 5.1 EDA
 - 독립변수 ($X$)
   - 개별 EDA 실시
   - EDA를 통한 이상치 제거
@@ -75,19 +80,19 @@ $\rightarrow$ 예측값과 실제값의 차이를 통한 점수 부여 (낮을 �
   - Boxplot을 통한 이상치 제거
 
 
-#### 2. 데이터 검정
+#### 5.2 데이터 검정
 - 잔차정규성 검정
 - Residual-Feature 관계 검정
 - 이분산 검정
 - 자기상관 검정
 
 
-#### 3. 최적 정규화
+#### 5.3 최적 정규화
 - OLS를 통한 모델링 생성
 - Feature 선정
 
 
-#### 4. Modeling
+#### 5.4 Modeling
 - 1차 모델링
   - origin modeling
 - 2차 모델링
@@ -95,7 +100,9 @@ $\rightarrow$ 예측값과 실제값의 차이를 통한 점수 부여 (낮을 �
 - 3차 모델링
   - 아웃라이어 2회 제거 (cook's distance)
 
-#### 5. submission
+
+
+### 6 submission
 - Paticipate teams : 1,076
 - Final Score : 0.50829
 - Leaderboard : 808 / 1257 (64%)
