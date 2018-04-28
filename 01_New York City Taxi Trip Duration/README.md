@@ -103,7 +103,7 @@ Kaggle is challenging you to build a model that predicts the total ride duration
 
 
 ### 6 submission
-- Paticipate teams : 1,076
+- Paticipate teams : 1,257
 - Final Score : 0.50829
 - Leaderboard : 808 / 1257 (64%)
 
