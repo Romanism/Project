@@ -1,22 +1,25 @@
 # Classification Project : Coupon Purchase Prediction
-[Project Link](https://github.com/Anylee2142/dss7-coupon/blob/master/Presentation/presentation_datanism.ipynb)
+[Coupon Purchase Prediction Link](https://github.com/Anylee2142/dss7-coupon/blob/master/Presentation/presentation_datanism.ipynb)
 
 
-## Team : Datanism
+
+### 1. Team : Datanism
 - 지성인 [팀장]
 - 이재웅 [팀원]
 - 이준성 [팀원]
 
 
-## Project Period
+
+### 2. Project Period
 - 시작일 : 2018/03/23
 - 종료일 : 2018/04/10
 - 발표일 : 2018/04/11
 
 
-## Overview
 
-#### Description
+### 3. Overview
+
+#### 3.1 Description
 
 Using past purchase and browsing behavior, this competition asks you to predict which coupons a customer will buy in a given period of time.
 
@@ -24,7 +27,7 @@ Using past purchase and browsing behavior, this competition asks you to predict 
 :  주어진 기간동안 고객들이 어떤 쿠폰을 구입할 지 예측하는 문제
 
 
-#### Evaluation (RMSLE)
+#### 3.2 Evaluation (RMSLE)
 <img src="img/MAP.png" width="500">
 
 - |U| - number of users
@@ -33,9 +36,10 @@ Using past purchase and browsing behavior, this competition asks you to predict 
 - m - number of purchased coupons for the given user. If m = 0, the precision is defined to be 0
 
 
-## Data
 
-#### Data set
+### 4. Data
+
+#### 4.1 Data set
 - user_list.csv - the master list of users in the dataset
 - coupon_list_train.csv - the master list of coupons which are considered part of the training set
 - coupon_list_test.csv - the master list of coupons which are considered part of the test set. Your competition predictions should be sourced only from these 310 coupons. You will not receive credit for predicting training set coupons that were purchased during the test set period.
@@ -47,25 +51,26 @@ Using past purchase and browsing behavior, this competition asks you to predict 
 - documentation.zip - an archive of Excel files containing an entity relationship diagram and English translations
 
 
-#### Data fields
+#### 4.2 Data fields
 - [Jupeter Notebook](https://github.com/Anylee2142/dss7-coupon/blob/master/Presentation/presentation_datanism.ipynb) 참고
 
 
-## Modeling
+
+### 5. Modeling
 
 
-#### 1. Data set
+#### 5.1 Data set
 - 각 테이블 변수 파악
 - 테이블간 구조 파악
 
 
-#### 2. EDA
+#### 5.2 EDA
 - 지역과 관련된 Data EDA
 - 가격과 관련된 Data EDA
 - 쿠폰종류와 관련된 Data EDA
 
 
-#### 3. Modeling
+#### 5.3 Modeling
 
 - Feature select
   - CAPSULE_TEXT
@@ -78,7 +83,8 @@ Using past purchase and browsing behavior, this competition asks you to predict 
   - Cosine similarity
 
 
-#### 4. Submission
+
+### 6 Submission
 - Paticipate teams : 1,076
 - Final Score : 0.0063885
 - Leaderboard : 69 / 1076 (6.4%)
