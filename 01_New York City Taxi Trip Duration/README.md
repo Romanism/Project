@@ -20,7 +20,7 @@
 
 #### 3.1 Description
 
-In this competition, Kaggle is challenging you to build a model that predicts the total ride duration of taxi trips in New York City.
+Kaggle is challenging you to build a model that predicts the total ride duration of taxi trips in New York City.
 
 
 : 뉴욕시에서 택시 주행시간을 예측하는 것이 목적
@@ -36,7 +36,7 @@ In this competition, Kaggle is challenging you to build a model that predicts th
 - log(x) - natural logarithm
 
 
-: 예측값과 실제값의 차이를 통한 점수 부여 (낮을 수록 예측값이 실제값에 가까워 좋은 예측임을 의미)
+: 예측값과 실제값의 차이를 통한 점수 부여 (값이 낮을 수록 예측값이 실제값에 가까워 좋은 예측임을 의미)
 
 
 
