@@ -1,5 +1,6 @@
 # 데이터가 일본 Ponpare의 고객정보를 가져오다 보니 일본어로 구성되어 있었습니다.
 # 이해하기 편하게 하기 위해 영어로 번역을 진행했습니다.
+# https://github.com/Ravirajadrangi 참고
 
 import pandas as pd
 
@@ -58,26 +59,3 @@ conversion_table = {
 				    b'\xe6\x84\x9b\xe7\x9f\xa5\xe7\x9c\x8c': 'Aichi Prefecture', b'\xe5\xb2\xa1\xe5\xb1\xb1\xe5\xb8\x82': 'Okayama', b'\xe9\x80\x9a\xe5\xad\xa6\xe3\x83\xac\xe3\x83\x83\xe3\x82\xb9\xe3\x83\xb3': 'Class', b'\xe4\xba\xac\xe9\x83\xbd': 'Kyoto', b'\xe7\xa7\x8b\xe7\x94\xb0\xe7\x9c\x8c': 'Akita', b'\xe3\x83\x8d\xe3\x82\xa4\xe3\x83\xab\xe3\x83\xbb\xe3\x82\xa2\xe3\x82\xa4': 'Nail and eye salon',
 				    b'\xe5\xb1\xb1\xe6\xa2\xa8\xe7\x9c\x8c': 'Yamanashi Prefecture'
 				    }
-
-# dictionary of files populated by the name of the files as the keys and columns to be translated as the values in a list
-files = {
-     'coupon_area_train.csv'        :['SMALL_AREA_NAME','PREF_NAME'],
-     'coupon_list_test.csv'         :['CAPSULE_TEXT','GENRE_NAME','ken_name','large_area_name','small_area_name'],
-     'coupon_area_test.csv'         :['SMALL_AREA_NAME','PREF_NAME'],
-     'coupon_detail_train.csv'      :['SMALL_AREA_NAME']
-     'coupon_list_train.csv'        :['CAPSULE_TEXT','GENRE_NAME','ken_name','large_area_name','small_area_name'],
-     'user_list.csv'				:['PREF_NAME']
-}
-
-
-for file in files: # itirating through every file which needs transformation
-
-	df = pd.read_csv(file)  # reads the content of the .csv file
-	for entry in range(0,len(df)):  # itiration through all the rows of the current file
-
-		for columns in files[file]:  # itiration through all the columns that needs to be translated
-			col_value = df[columns][entry].encode('utf-8') # encodes the japanese text to UTF-8 format
-			df[columns][entry] = conversion_table[col_value] # replaces the japanese text to its corresponding english interpretation
-
-
-	df.to_csv(file+'_translated_en.csv') # writes the modified dataframe as a new .csv file with 'translated_en' added to the original name
