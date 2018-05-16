@@ -12,7 +12,7 @@ def premier(df, startpage, endpage) :
     '''
     이 함수는 프리미어리그 경기 정보를 크롤링하는 함수입니다
     방식은 Selenium을 사용했습니다
-    각 팀별로 Possesion(점유율), Shots on target(유효슈팅), Shots(슈팅), Touches(터치), Passes(패스),
+    각 팀별로 Possesion(점유율), SOT(Shots on target, 유효슈팅), Shots(슈팅), Touches(터치), Passes(패스),
     Tackles(태클), Clearances(방어), Corners(코너킥), Offsides(오프사이드), Goal(골)을 수집했습니다
     '''
 
@@ -28,7 +28,7 @@ def premier(df, startpage, endpage) :
         data = {
         "Team" : driver.find_element_by_css_selector("#mainContent > div > section > div.centralContent > div.mcTabsContainer > div.mcTabs > section.mcMainTab.head-to-head.active > div.mcTabs > div.mcStatsTab.statsSection.season-so-far.wrapper.col-12.active > table > thead > tr > th:nth-child(1) > a").text,
         "Possession" : driver.find_element_by_css_selector("#mainContent > div > section > div.centralContent > div.mcTabsContainer > div.mcTabs > section.mcMainTab.head-to-head.active > div.mcTabs > div.mcStatsTab.statsSection.season-so-far.wrapper.col-12.active > table > tbody > tr:nth-child(1) > td:nth-child(1) > p").text,
-        "Shots on target" : driver.find_element_by_css_selector("#mainContent > div > section > div.centralContent > div.mcTabsContainer > div.mcTabs > section.mcMainTab.head-to-head.active > div.mcTabs > div.mcStatsTab.statsSection.season-so-far.wrapper.col-12.active > table > tbody > tr:nth-child(2) > td:nth-child(1) > p").text,
+        "SOT" : driver.find_element_by_css_selector("#mainContent > div > section > div.centralContent > div.mcTabsContainer > div.mcTabs > section.mcMainTab.head-to-head.active > div.mcTabs > div.mcStatsTab.statsSection.season-so-far.wrapper.col-12.active > table > tbody > tr:nth-child(2) > td:nth-child(1) > p").text,
         "Shots" : driver.find_element_by_css_selector("#mainContent > div > section > div.centralContent > div.mcTabsContainer > div.mcTabs > section.mcMainTab.head-to-head.active > div.mcTabs > div.mcStatsTab.statsSection.season-so-far.wrapper.col-12.active > table > tbody > tr:nth-child(3) > td:nth-child(1) > p").text,
         "Touches" : driver.find_element_by_css_selector("#mainContent > div > section > div.centralContent > div.mcTabsContainer > div.mcTabs > section.mcMainTab.head-to-head.active > div.mcTabs > div.mcStatsTab.statsSection.season-so-far.wrapper.col-12.active > table > tbody > tr:nth-child(4) > td:nth-child(1) > p").text,
         "Passes" : driver.find_element_by_css_selector("#mainContent > div > section > div.centralContent > div.mcTabsContainer > div.mcTabs > section.mcMainTab.head-to-head.active > div.mcTabs > div.mcStatsTab.statsSection.season-so-far.wrapper.col-12.active > table > tbody > tr:nth-child(5) > td:nth-child(1) > p").text,
@@ -45,7 +45,7 @@ def premier(df, startpage, endpage) :
         data = {
         "Team" : driver.find_element_by_css_selector("#mainContent > div > section > div.centralContent > div.mcTabsContainer > div.mcTabs > section.mcMainTab.head-to-head.active > div.mcTabs > div.mcStatsTab.statsSection.season-so-far.wrapper.col-12.active > table > thead > tr > th:nth-child(3) > a").text,
         "Possession" : driver.find_element_by_css_selector("#mainContent > div > section > div.centralContent > div.mcTabsContainer > div.mcTabs > section.mcMainTab.head-to-head.active > div.mcTabs > div.mcStatsTab.statsSection.season-so-far.wrapper.col-12.active > table > tbody > tr:nth-child(1) > td:nth-child(3) > p").text,
-        "Shots on target" : driver.find_element_by_css_selector("#mainContent > div > section > div.centralContent > div.mcTabsContainer > div.mcTabs > section.mcMainTab.head-to-head.active > div.mcTabs > div.mcStatsTab.statsSection.season-so-far.wrapper.col-12.active > table > tbody > tr:nth-child(2) > td:nth-child(3) > p").text,
+        "SOT" : driver.find_element_by_css_selector("#mainContent > div > section > div.centralContent > div.mcTabsContainer > div.mcTabs > section.mcMainTab.head-to-head.active > div.mcTabs > div.mcStatsTab.statsSection.season-so-far.wrapper.col-12.active > table > tbody > tr:nth-child(2) > td:nth-child(3) > p").text,
         "Shots" : driver.find_element_by_css_selector("#mainContent > div > section > div.centralContent > div.mcTabsContainer > div.mcTabs > section.mcMainTab.head-to-head.active > div.mcTabs > div.mcStatsTab.statsSection.season-so-far.wrapper.col-12.active > table > tbody > tr:nth-child(3) > td:nth-child(3) > p").text,
         "Touches" : driver.find_element_by_css_selector("#mainContent > div > section > div.centralContent > div.mcTabsContainer > div.mcTabs > section.mcMainTab.head-to-head.active > div.mcTabs > div.mcStatsTab.statsSection.season-so-far.wrapper.col-12.active > table > tbody > tr:nth-child(4) > td:nth-child(3) > p").text,
         "Passes" : driver.find_element_by_css_selector("#mainContent > div > section > div.centralContent > div.mcTabsContainer > div.mcTabs > section.mcMainTab.head-to-head.active > div.mcTabs > div.mcStatsTab.statsSection.season-so-far.wrapper.col-12.active > table > tbody > tr:nth-child(5) > td:nth-child(3) > p").text,
