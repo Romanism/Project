@@ -6,6 +6,8 @@ warnings.filterwarnings('ignore')
 
 # 1. EDA
 import seaborn as sns
+sns.set()
+sns.set_style("whitegrid")
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 from matplotlib.pyplot import *
