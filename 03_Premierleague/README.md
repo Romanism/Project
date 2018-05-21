@@ -47,4 +47,5 @@
 <br><br/>
 ### 4. Evaluation
 <center><img src="img/ROC.png"></center>
+
 - AUC Score : Predict Lose(0.86), Predict Win(0.92), Predict Draw(0.69)
