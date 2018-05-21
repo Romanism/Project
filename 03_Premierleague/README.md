@@ -2,7 +2,9 @@
 
 <center><img src="img/premierleague.jpeg" width = 800></center>
 <br><br/>
+
 ### 1. Introduction
+
 
 #### 1.1 Objective
 - 프리미어리그에서 승리를 하기 위해선 팀이 어느 정도의 Performance를 보여줘야 할까?
@@ -44,5 +46,5 @@
 
 <br><br/>
 ### 4. Evaluation
-<center><img src="img/AUC.png"></center>
+<center><img src="img/ROC.png"></center>
 - AUC Score : Predict Lose(0.86), Predict Win(0.92), Predict Draw(0.69)
