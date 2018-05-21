@@ -33,3 +33,54 @@ def category_to_ohe(train_col, test_col):
     labeled_test_col = labeled_test_col.reshape(len(labeled_test_col),1)
 
     return labeled_train_col, labeled_test_col
+
+
+# 3. Modeling
+
+# 3.1 조건부 확률기반 생성모형
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis # LDA
+from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis # QDA
+from sklearn.naive_bayes import * # Naive basesian
+
+# 3.2 조건부 확률기반 판별모형
+from sklearn.tree import DecisionTreeClassifier
+
+# 3.3 모형결합 (Ensenble)
+from sklearn.ensemble import VotingClassifier # voting
+from sklearn.ensemble import BaggingClassifier # bagging
+from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier # random Forest
+
+from sklearn.ensemble import AdaBoostClassifier # AdaBoost
+from sklearn.ensemble import GradientBoostingClassifier # GradientBoost
+import xgboost # xgboost
+
+# 3.4 판별함수 모형
+from sklearn.linear_model import Perceptron # perceptron
+from sklearn.linear_model import SGDClassifier # SGD
+from sklearn.svm import SVC # support vector machine
+
+
+# 4. Optimizer
+from sklearn.model_selection import validation_curve # validation curve
+from sklearn.model_selection import GridSearchCV # gridseach
+from sklearn.model_selection import ParameterGrid # ParameterGrid
+
+
+# 5. Evaluation
+from sklearn.metrics import * # make confusion matrix
+from sklearn.preprocessing import label_binarize # ROC curve
+from sklearn.metrics import auc # AUC
+
+
+# 6. Submission
+def top_merge(df, n=10, column="predict", merge_column="COUPON_ID_hash"):
+    '''
+    get top n row
+
+    :param pandas.DataFrame df:
+    :param int n:
+    :param str column:
+    :rtype: pandas.DataFrame
+    '''
+
+    return " ".join(df.sort_index(by=column)[-n:][merge_column])

@@ -36,6 +36,8 @@ def category_to_ohe(train_col, test_col):
 
 # 3. Modeling
 
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+
 # 3.1 조건부 확률기반 생성모형
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis # LDA
 from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis # QDA
@@ -69,3 +71,4 @@ from sklearn.model_selection import ParameterGrid # ParameterGrid
 from sklearn.metrics import * # make confusion matrix
 from sklearn.preprocessing import label_binarize # ROC curve
 from sklearn.metrics import auc # AUC
+from sklearn.metrics import roc_curve

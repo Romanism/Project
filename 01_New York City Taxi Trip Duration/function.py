@@ -43,3 +43,7 @@ def haversine_np(lon1, lat1, lon2, lat2):
     km = 6367 * c
 
     return km
+
+# 3. Modeling
+import statsmodels.api as sm
+import scipy as sp
