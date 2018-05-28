@@ -3,6 +3,7 @@
 <center><img src="img/premierleague.jpeg" width = 800></center>
 <br><br/>
 
+
 ### 1. Introduction
 
 
@@ -21,16 +22,17 @@
 - Matplotlib
 - Seaborn
 - Pandas
-
 <br><br/>
+
+
 ### 2. EDA (Exploratory data analysis)
 <center><img src="img/EDA.png" width = '600'></center>
 
 - y값(Result)와 X값들의 분포 확인
 - EDA를 통해 최종 Feature selection
-
-
 <br><br/>
+
+
 ### 3. Modeling
 | Model|Precision|Recall|F1-score|Support|
 |------|------|------|------|------|
@@ -43,8 +45,9 @@
 |XG Boost|0.65|0.66|0.61|760|
 
 - Best Model = XG Boost
-
 <br><br/>
+
+
 ### 4. Evaluation
 <center><img src="img/ROC.png" width = '600'></center>
 
