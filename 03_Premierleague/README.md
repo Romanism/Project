@@ -24,7 +24,7 @@
 
 <br><br/>
 ### 2. EDA (Exploratory data analysis)
-<center><img src="img/EDA.png"></center>
+<center><img src="img/EDA.png" width = '600'></center>
 
 - y값(Result)와 X값들의 분포 확인
 - EDA를 통해 최종 Feature selection
@@ -46,6 +46,6 @@
 
 <br><br/>
 ### 4. Evaluation
-<center><img src="img/ROC.png"></center>
+<center><img src="img/ROC.png" width = '600'></center>
 
 - AUC Score : Predict Lose(0.86), Predict Win(0.92), Predict Draw(0.69)
