@@ -36,6 +36,7 @@ def category_to_ohe(train_col, test_col):
 
 
 # 3. Modeling
+from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 # 3.1 조건부 확률기반 생성모형
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis # LDA
