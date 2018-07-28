@@ -79,7 +79,6 @@ Using past purchase and browsing behavior, this competition asks you to predict 
 <img src="img/submission.png" width="700">
 
 
-#### 2.5 submission
 - Paticipate teams : 1,076
 - Final Score : 0.002595
 - Leaderboard : 794 / 1076 (73.7%)
