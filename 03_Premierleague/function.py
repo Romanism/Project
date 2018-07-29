@@ -6,12 +6,16 @@ warnings.filterwarnings('ignore')
 
 # 1. EDA
 import seaborn as sns
-sns.set()
-sns.set_style("whitegrid")
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 from matplotlib.pyplot import *
 
+# Statistic
+import scipy.stats as stats
+import urllib
+from statsmodels.formula.api import ols
+from statsmodels.stats.anova import anova_lm
+import matplotlib.pyplot as plt
 
 # 2. Feature Select
 from sklearn.preprocessing import LabelEncoder
