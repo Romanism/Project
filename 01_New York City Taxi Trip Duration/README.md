@@ -127,4 +127,3 @@ Kaggle is challenging you to build a model that predicts the total ride duration
 - EDA를 더 체계적으로 진행할 필요가 있음
 - 가지고 있는 Feature로는 성능이 한계가 있어 외부에서 활용할 수 있는 Feature를 가져오면 좋을것이라 생각됨
 - Feature select 기준으로 VIF만을 통해 진행했었는데 더 좋은 방법이나 추가적인 기준이 필요할것으로 보임
-- Outlier 제거 방법으로 Cook's distance을 사용했는데 추후 다른 방법들도 활용해볼 필요가 있음

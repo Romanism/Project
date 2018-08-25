@@ -85,7 +85,14 @@ Using past purchase and browsing behavior, this competition asks you to predict 
 <br><br/>
 
 
-## 3. 느낀점
+## 3. Key Points
+- 복잡하게 흩어져있는 Table들의 속성을 파악해 필요한 Table만 선정, Merge 진행
+- 구입 여부를 y값으로 지정해 모델링을 진행
+- RandomForest을 통한 Modeling 진행
+- 다양한 Parameter 값을 통해 모델 최적화
+
+
+## 4. 느낀점
 
 - 파이썬으로 처음 진행했던 Classification project라 기본적으로 어떤 로직으로 진행해야 하는지 많이 헤맸음
 - 단순히 분류가 아닌 구입할만한 쿠폰 10개 내외를 선정해야 하기 때문에 추천시스템의 느낌도 강했는데 이를 어떻게 적용할 수 있을지 고민이 많았음
@@ -93,7 +100,8 @@ Using past purchase and browsing behavior, this competition asks you to predict 
 <br><br/>
 
 
-## 4. 개선점
+## 5. 개선점
 
 - Cosine유사도에 대한 공부가 필요하다고 판단 (추천시스템에서 많이 사용)
 - 팀원간의 원할한 협업을 위해 변수명을 통일해서 프로젝트를 진행
+- GridSearch, Crossvalidation에 대한 개념이 명확하지 않아 활용을 못했는데 추후 프로젝트에선 활용할 예정
