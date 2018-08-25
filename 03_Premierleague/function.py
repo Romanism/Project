@@ -72,6 +72,9 @@ from sklearn.model_selection import ParameterGrid # ParameterGrid
 
 
 # 5. Evaluation
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score
+
 from sklearn.metrics import * # make confusion matrix
 from sklearn.preprocessing import label_binarize # ROC curve
 from sklearn.metrics import auc # AUC
