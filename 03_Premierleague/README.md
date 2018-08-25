@@ -1,9 +1,9 @@
 <h1><center>The prediction models for the premierleague</center></h1>
 
 <center><img src="img/premierleague.jpeg" width = 800></center>
+
+[Project Link](https://github.com/Romanism/Project/blob/master/03_Premierleague/PROJECT.pdf)
 <br><br/>
-
-
 ### 1. Introduction
 
 #### 1.1 period
@@ -30,8 +30,8 @@
 - Offsides : 오프사이드 (개)
 - Goal : 골 (개)
 - Year : 년도 (2012, 2013, 2014, 2015, 2016, 2017)
-- Home :홈/어웨이여부(어웨이:0,홈:1)
-- Result :결과(패:0,승:1,무:2)
+- Home :홈 / 어웨이 여부 (어웨이:0,홈:1)
+- Result :결과 (패:0,승:1,무:2)
 
 
 #### 1.4 Evaluation
