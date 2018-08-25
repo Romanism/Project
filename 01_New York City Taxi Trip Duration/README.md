@@ -107,8 +107,8 @@ Kaggle is challenging you to build a model that predicts the total ride duration
 
 ## 3. Key point
 - 종속변수의 log화 (정규분포화)
-- Datetime 데이터를 분리해 새로운 데이터 생성
-- 새로운 데이터 생성 (거리, 속도, 날씨)
+- Datetime(년-월-일) 변수를 분리해 새로운 데이터 생성
+- 새로운 데이터 생성 및 외부데이터 활용 (거리, 속도, 날씨)
 - EDA를 통한 Outlier 제거
 - Statesmodels를 통한 Linear Regression 모델 생성
 - Cook's Distance를 통한 모델의 최적화
