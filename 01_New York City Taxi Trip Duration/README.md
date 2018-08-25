@@ -105,7 +105,16 @@ Kaggle is challenging you to build a model that predicts the total ride duration
 <br><br/>
 
 
-## 3. 느낀점
+## 3. Key point
+- 종속변수의 log화 (정규분포화)
+- Datetime 데이터를 분리해 새로운 데이터 생성
+- 새로운 데이터 생성 (거리, 속도, 날씨)
+- EDA를 통한 Outlier 제거
+- Statesmodels를 통한 Linear Regression 모델 생성
+- Cook's Distance를 통한 모델의 최적화
+<br><br/>
+
+## 4. 느낀점
 
 - Kaggle project를 처음해봐서 어떤 절차를 통해 평가가 되는지 파악하는데 시간이 많이 소요됨
 - 파이썬으로 처음 진행했던 Regression project라 기본적으로 어떤 로직으로 진행해야 하는지 많이 헤맸음
@@ -113,7 +122,7 @@ Kaggle is challenging you to build a model that predicts the total ride duration
 <br><br/>
 
 
-## 4. 개선점
+## 5. 개선점
 
 - EDA를 더 체계적으로 진행할 필요가 있음
 - 가지고 있는 Feature로는 성능이 한계가 있어 외부에서 활용할 수 있는 Feature를 가져오면 좋을것이라 생각됨
