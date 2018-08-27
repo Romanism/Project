@@ -105,4 +105,4 @@ Using past purchase and browsing behavior, this competition asks you to predict 
 
 - Cosine유사도에 대한 공부가 필요하다고 판단 (추천시스템에서 많이 사용)
 - 팀원간의 원할한 협업을 위해 변수명을 통일해서 프로젝트를 진행
-- GridSearch, Crossvalidation에 대한 개념이 명확하지 않아 활용을 못했는데 추후 프로젝트에선 활용할 예정
+- GridSearch, Cross validation에 대한 개념이 명확하지 않아 활용을 못했는데 추후 프로젝트에선 활용할 예정
